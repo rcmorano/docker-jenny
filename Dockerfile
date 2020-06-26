@@ -1,7 +1,7 @@
 FROM alpine
 
 WORKDIR /blog/src
-RUN apk add --no-cache gettext git vim make npm bash && \
+RUN apk add --no-cache gettext git vim make npm bash coreutils && \
     npm install -g gh-markdown-cli && \
     git clone https://github.com/hmngwy/jenny.git /usr/local/src/jenny && \
     cd /usr/local/src/jenny && \
