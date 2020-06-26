@@ -3,7 +3,7 @@
 function jenny() {
 
   docker run --rm -it \
-    -v $PWD:/blog \
-    rcmorano/jenny
+    -v $PWD/..:/blog \
+    rcmorano/jenny $@
 
 }

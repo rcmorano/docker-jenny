@@ -7,4 +7,4 @@ RUN apk add --no-cache gettext git vim make npm bash && \
     cd /usr/local/src/jenny && \
     make install
 
-CMD ["jenny"]
+ENTRYPOINT ["jenny"]
